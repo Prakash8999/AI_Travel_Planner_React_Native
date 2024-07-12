@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { TouchableOpacity } from 'react-native'
 import { useRouter } from 'expo-router'
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from '@/COnfigs/FirebaseConfig';
+import { auth } from '@/Configs/FirebaseConfig';
 
 
 const Signup = () => {

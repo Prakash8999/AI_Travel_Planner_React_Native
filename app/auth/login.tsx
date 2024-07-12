@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { TouchableOpacity } from 'react-native'
 import { Redirect, useRouter } from 'expo-router'
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from '@/COnfigs/FirebaseConfig';
+import { auth } from '@/Configs/FirebaseConfig';
 const login = () => {
 	const router = useRouter()
 	const user = auth.currentUser

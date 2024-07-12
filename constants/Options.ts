@@ -52,6 +52,6 @@ export const SelectTraverles = [
   ];
   
 
-export const AI_PROMPT = 'Generate travel plan for location : {location} for {totalDays} days and {totalNight} Night for {traveler} with {budget} budget with flight details, flight price with booking urls, hotels option list with hotel name, hotel address, price, hotel image url, geo coordinates, rating, description, and place to visit nearby with place name, place detail, place image url, geo coordinates, ticket pricing, time t travel day each of the location for one day and one night with each day plan with the best time to visit in JSON format.'
+export const AI_PROMPT = 'Generate travel plan for location : {location} for {totalDays} days and {totalNight} Night for {traveler} with {budget} budget with flight details, flight price with booking urls, hotels option list with hotel name, hotel address, price, hotel image url, geo coordinates, rating, description, and place to visit nearby with place name, place detail, place image url, geo coordinates, ticket pricing, time t travel day each of the location for {totalDays} days and {totalNight} night with each day plan with the best time to visit in JSON format.'
 
 

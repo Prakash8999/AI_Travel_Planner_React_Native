@@ -63,7 +63,7 @@ const SelectDates: React.FC = () => {
 			...tripData,
 			startDate: startDate.toDate(),
 			endDate: endDate.toDate(),
-			totalNumberOfDays: totalNumberOfDays + 1,
+			totalNumberOfDays: totalNumberOfDays,
 		});
 	router.push('/createtrip/selectbudget')
 	};
