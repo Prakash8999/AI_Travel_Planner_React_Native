@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fitnessapp",
-    "slug": "fitnessapp",
+    "name": "aitravelplaner",
+    "slug": "aitravelplaner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

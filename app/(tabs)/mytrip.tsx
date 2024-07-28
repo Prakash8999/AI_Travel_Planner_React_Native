@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity, ActivityIndicator, ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '@/Configs/FirebaseConfig'
 import StartNewTrip from '@/Components/Mytrips/StartNewTrip'
@@ -9,28 +9,7 @@ import UserTripList from '@/Components/UserTripList'
 const mytrip = () => {
 	interface UserTrip {
 		docId: string;
-		tripData: {
-			locationInfo: {
-				name: string;
-				coordinates: {
-					lat: number;
-					lng: number;
-				};
-				photoRef: string;
-				url: string;
-			};
-			traveler: {
-				id: number;
-				title: string;
-				desc: string;
-				icon: string;
-				people: string;
-			};
-			startDate: string;
-			endDate: string;
-			totalNumberOfDays: number;
-			budget: string;
-		};
+		tripData: string,
 		tripPlane: {
 			trip: {
 				budget: string;
@@ -72,9 +51,11 @@ const mytrip = () => {
 
 	return (
 		<>
+		<ScrollView>
+
 			<View style={{
 				height: '100%',
-				marginTop: 30,
+				paddingTop: 30,
 				padding: 20,
 				backgroundColor: 'white'
 			}}>
@@ -105,6 +86,7 @@ const mytrip = () => {
 
 			</View>
 
+				</ScrollView>
 		</>
 	)
 }
